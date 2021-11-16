@@ -266,3 +266,5 @@ function taskTen() {
   let answer = calculator(1, 5, "multiply");
   answerTen.innerHTML = answer;
 }
+
+//
