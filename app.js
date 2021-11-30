@@ -243,20 +243,24 @@ om någon av dessa conditions inte uppfylls ska du visa en alertbox med texten "
 */
 
 function calculator(valueOne, valueTwo, operator) {
-  switch(operator) {
-    case "add":
-      return alert((valueOne + valueTwo));
-      break;
-    case "subtract":
-      return alert((valueOne - valueTwo));
-      break;
-    case "multiply":
-      return alert((valueOne * valueTwo));
-      break;
-    default:
-      return alert("Något är fel");
-      break;
-  }
+  if (!isNaN(valueOne) && !isNaN(valueTwo)) {
+    switch(operator) {
+      case "add":
+        return alert((valueOne + valueTwo));
+        break;
+      case "subtract":
+        return alert((valueOne - valueTwo));
+        break;
+      case "multiply":
+        return alert((valueOne * valueTwo));
+        break;
+      default:
+        return alert("Något är fel");
+        break;
+    }
+    } else if (isNaN(valueOne) || isNaN(valueTwo)) {
+      return alert("Argument ett eller två är inget nummer");
+    }
 }
 
 function taskTen() {
