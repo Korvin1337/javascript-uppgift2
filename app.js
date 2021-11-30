@@ -259,7 +259,7 @@ function calculator(valueOne, valueTwo, operator) {
         break;
     }
     } else if (isNaN(valueOne) || isNaN(valueTwo)) {
-      return alert("Argument ett eller två är inget nummer");
+      return alert("Något är fel");
     }
 }
 
