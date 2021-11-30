@@ -245,16 +245,16 @@ om någon av dessa conditions inte uppfylls ska du visa en alertbox med texten "
 function calculator(valueOne, valueTwo, operator) {
   switch(operator) {
     case "add":
-      return valueOne + valueTwo;
+      return alert((valueOne + valueTwo));
       break;
     case "subtract":
-      return valueOne - valueTwo;
+      return alert((valueOne - valueTwo));
       break;
     case "multiply":
-      return valueOne * valueTwo;
+      return alert((valueOne * valueTwo));
       break;
     default:
-      return "error, try again";
+      return alert("Något är fel");
       break;
   }
 }
@@ -264,7 +264,6 @@ function taskTen() {
   //första och andra argumentet ska vara nummer, tredje argumentet ska
   //vara en sträng med något av värdena "add", "subtract", "multiply", "divide"
   let answer = calculator(1, 5, "multiply");
-  answerTen.innerHTML = answer;
 }
 
 //
