@@ -244,7 +244,7 @@ om någon av dessa conditions inte uppfylls ska du visa en alertbox med texten "
 
 function calculator(valueOne, valueTwo, operator) {
   if (!isNaN(valueOne) && !isNaN(valueTwo)) {
-    switch(operator) {
+    switch(operator.toLowerCase()) {
       case "add":
         return alert((valueOne + valueTwo));
         break;
